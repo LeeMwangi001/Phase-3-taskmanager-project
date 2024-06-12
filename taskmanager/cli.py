@@ -25,4 +25,11 @@ def main():
                     print(f"{task[0]}. {task[1]} - Due: {task[3]} - {'Completed' if task[4] else 'Incomplete'}")
             else:
                 print("No tasks to display.")
-
+        elif choice == "3":
+            task_id = input("Enter task ID to update: ")
+            title = input("Enter new task title: ")
+            description = input("Enter new task description: ")
+            due_date = input("Enter new due date (YYYY-MM-DD): ")
+            update_task(task_id, title, description, due_date)
+            print("Task updated successfully!")
+        
