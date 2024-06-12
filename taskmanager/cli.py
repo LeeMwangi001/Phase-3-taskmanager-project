@@ -18,4 +18,11 @@ def main():
             due_date = input("Enter due date (YYYY-MM-DD): ")
             add_task(title, description, due_date)
             print("Task added successfully!")
-       
+        elif choice == "2":
+            tasks = list_tasks()
+            if tasks:
+                for task in tasks:
+                    print(f"{task[0]}. {task[1]} - Due: {task[3]} - {'Completed' if task[4] else 'Incomplete'}")
+            else:
+                print("No tasks to display.")
+
