@@ -1,6 +1,6 @@
-from taskmanager.database import create_tables
 from taskmanager.cli import main
+from taskmanager.database import init_db
 
 if __name__ == "__main__":
-    create_tables()
+    init_db()  # Initialize the database and create tables
     main()

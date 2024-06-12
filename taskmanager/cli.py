@@ -45,10 +45,5 @@ def mark_task_complete(task_id):
     """Mark a task as complete"""
     TaskManagerController.mark_task_complete(task_id)
 
-@main.command()
-def init_db():
-    """Initialize the database"""
-    TaskManagerController.init_db()
-
 if __name__ == "__main__":
     main()
