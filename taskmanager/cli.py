@@ -36,4 +36,15 @@ def main():
             task_id = input("Enter task ID to delete: ")
             delete_task(task_id)
             print("Task deleted successfully!")
-        
+        elif choice == "5":
+            task_id = input("Enter task ID to mark as complete: ")
+            mark_task_complete(task_id)
+            print("Task marked as complete!")
+        elif choice == "6":
+            print("Exiting Task Manager. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 6.")
+
+if __name__ == "__main__":
+    main()
