@@ -32,4 +32,8 @@ def main():
             due_date = input("Enter new due date (YYYY-MM-DD): ")
             update_task(task_id, title, description, due_date)
             print("Task updated successfully!")
+        elif choice == "4":
+            task_id = input("Enter task ID to delete: ")
+            delete_task(task_id)
+            print("Task deleted successfully!")
         
