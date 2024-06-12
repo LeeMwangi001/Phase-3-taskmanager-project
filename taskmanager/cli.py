@@ -15,7 +15,7 @@ def main():
         if choice == "1":
             title = input("Enter task title: ")
             description = input("Enter task description: ")
-            due_date = input("Enter due date (YYYY-MM-DD): ")
+            due_date = input("Enter due date (DD-MM-YYYY): ")
             add_task(title, description, due_date)
             print("Task added successfully!")
         elif choice == "2":
@@ -29,7 +29,7 @@ def main():
             task_id = input("Enter task ID to update: ")
             title = input("Enter new task title: ")
             description = input("Enter new task description: ")
-            due_date = input("Enter new due date (YYYY-MM-DD): ")
+            due_date = input("Enter new due date (DD-MM-YYYY): ")
             update_task(task_id, title, description, due_date)
             print("Task updated successfully!")
         elif choice == "4":
