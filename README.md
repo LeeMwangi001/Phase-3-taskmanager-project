@@ -26,10 +26,24 @@ TaskManager is a simple command-line application for managing tasks. It allows u
 
 ## Usage
 
-Run the main script to start the TaskManager application:
+1. Clone the repository:
+
 ```sh
-python main.py
+git clone https://github.com/LeeMwangi001/TaskManager.git
+cd TaskManager
 ```
+2. Install dependencies using Pipenv:
+
+```sh
+pipenv install
+```
+
+3. Run the application:
+
+```sh
+pipenv run python main.py
+```
+
 ## Menu Options
 
 1. Add Task: Prompts the user to enter the task title, description, and due date. The task is then added to the task list.
